@@ -174,4 +174,93 @@
       <option name="JSP" value="false" />
     </context>
   </template>
+  <template name="@each" value="@each('$PARTIAL$', $VARIABLE$, '$NAME$'$EMPTY$)" description="Blade @each" toReformat="false" toShortenFQNames="true">
+    <variable name="PARTIAL" expression="" defaultValue="&quot;view.name&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="&quot;$jobs&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;job&quot;" alwaysStopAt="true" />
+    <variable name="EMPTY" expression="" defaultValue="&quot;, 'view.empty'&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@push" value="@push ('$START$')&#10;    $END$&#10;@endpush" description="Blade @push" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="&quot;scripts&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@stack" value="@stack('$CONTENT$')" description="Blade @stack" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="&quot;content&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@inject" value="@inject('$CONTENT$','$SERVICE$')" description="Blade @inject" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="&quot;metrics&quot;" alwaysStopAt="true" />
+    <variable name="SERVICE" expression="" defaultValue="App\Services\MetricsService&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@can" value="@can('$VERB$', $VARIABLE$)&#10;    $CAN$&#10;@elsecan('$VERB2$', $CLASS$)&#10;    $CANNOT$&#10;@endcan" description="Blade @can" toReformat="false" toShortenFQNames="true">
+    <variable name="VERB" expression="" defaultValue="&quot;update&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="&quot;$post&quot;" alwaysStopAt="true" />
+    <variable name="CAN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VERB2" expression="" defaultValue="&quot;create&quot;" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="&quot;App\Post::class&quot;" alwaysStopAt="true" />
+    <variable name="CANNOT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@cannot" value="@cannot('$VERB$', $VARIABLE$)&#10;    $CAN$&#10;@elsecannot('$VERB2$', $CLASS$)&#10;    $CANNOT$&#10;@endcannot" description="Blade @cannot" toReformat="false" toShortenFQNames="true">
+    <variable name="VERB" expression="" defaultValue="&quot;update&quot;" alwaysStopAt="true" />
+    <variable name="VARIABLE" expression="" defaultValue="&quot;$post&quot;" alwaysStopAt="true" />
+    <variable name="CAN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VERB2" expression="" defaultValue="&quot;create&quot;" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="&quot;App\Post::class&quot;" alwaysStopAt="true" />
+    <variable name="CANNOT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@verbatim" value="@verbatim&#10;    &lt;div class=&quot;container&quot;&gt;&#10;        Hello, {{ name }}.&#10;    &lt;/div&gt;&#10;@endverbatim" description="Blade @verbatim" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@isset" value="@isset($START$)&#10;    $END$&#10;@endisset" description="Blade @isset" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="@empty" value="@empty($START$)&#10;    $END$&#10;@endempty" description="Blade @empty" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="mix" value="{{ mix('$ASSET$') }}" description="Laravel's global mix function" toReformat="false" toShortenFQNames="true">
+    <variable name="ASSET" expression="" defaultValue="&quot;/css/app.css&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@lang" value="@lang('$CONENT$')" description="Blade @lang" toReformat="false" toShortenFQNames="true">
+    <variable name="CONENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
 </templateSet>
