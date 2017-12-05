@@ -1,9 +1,10 @@
-# laravel-blade-phpstorm-live-template
+# Laravel Live Templates
 PhpStorm Live templates let you insert frequently-used or custom code constructs into your source code file quickly, efficiently, and accurately.
 
 This repo contains live templates for frequently-used Laravel Blade directives.
 
-![Demo](img/demo.gif)
+![Demo](img/demo.gif "Live templates demo")
+
 
 ##How to install
 1) Download and copy the *Laravel-Blade.xml* file to your templates folder:
@@ -53,4 +54,17 @@ e.g. `~/Library/Preferences/PhpStorm2017.2/templates` on OS X for PhpStorm 2017
 * **@isset** : Blade @isset
 * **@empty** : Blade @empty
 * **mix** : Laravel's global mix function
-* **@lang** : Blade @lang    
+* **@lang** : Blade @lang
+
+## Contributing
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-directive)
+3. Replace the *Laravel-Blade.xml* with your current config file from PhpStorm templates folder.
+4. Update this *README.md* file. 
+5. Commit your changes (git commit -m 'Add new blade directive')
+6. Push to the branch (git push origin my-new-directive)
+7. Create new Pull Request
+
+
+## License
+The MIT License (MIT). Please see License File for more information.    
