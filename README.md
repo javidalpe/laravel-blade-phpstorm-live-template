@@ -1,12 +1,11 @@
-# Laravel Live Templates
+# Laravel Blade Live Templates
 PhpStorm Live templates let you insert frequently-used or custom code constructs into your source code file quickly, efficiently, and accurately.
 
 This repo contains live templates for frequently-used Laravel Blade directives.
 
 ![Demo](img/demo.gif "Live templates demo")
 
-
-##How to install
+## How to install
 1) Download and copy the *Laravel-Blade.xml* file to your templates folder:
 
 * Windows: `<your home directory>\.<product name><version number>\config\templates`
@@ -17,7 +16,7 @@ e.g. `~/Library/Preferences/PhpStorm2017.2/templates` on OS X for PhpStorm 2017
 
 2) Restart PhpStorm.
 
-3) To see all templates, go to *Preferences->Live Templates* and expand the Template Group.
+3) To see all templates, go to *Preferences->Live Templates* and expand *Laravel-Blade*.
 
 ## Templates
 * **@elseif** : Blade @elseif
