@@ -1,19 +1,19 @@
 <templateSet group="Laravel-Blade">
-  <template name="@elseif" value="@elseif ($START$)&#10;    $END$" description="Blade @elseif" toReformat="false" toShortenFQNames="true">
+  <template name="@elseif" value="@elseif ($START$)&#10;    $SELECTION$$END$" description="Blade @elseif" toReformat="false" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@for" value="@for ($i = 0; $i &lt; $LIMIT$; $i++)&#10;   $END$&#10;@endfor" description="Blade @for" toReformat="false" toShortenFQNames="true">
+  <template name="@for" value="@for ($i = 0; $i &lt; $LIMIT$; $i++)&#10;   $SELECTION$$END$&#10;@endfor" description="Blade @for" toReformat="false" toShortenFQNames="true">
     <variable name="LIMIT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@foreach" value="@foreach ($USERS$ as $USER$)&#10;    $END$&#10;@endforeach" description="Blade @foreach" toReformat="false" toShortenFQNames="true">
+  <template name="@foreach" value="@foreach ($USERS$ as $USER$)&#10;    $SELECTION$$END$&#10;@endforeach" description="Blade @foreach" toReformat="false" toShortenFQNames="true">
     <variable name="USERS" expression="" defaultValue="&quot;$users&quot;" alwaysStopAt="true" />
     <variable name="USER" expression="" defaultValue="&quot;$user&quot;" alwaysStopAt="true" />
     <context>
@@ -21,14 +21,14 @@
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@if" value="@if ($START$)&#10;    $END$&#10;@endif" description="Blade @if" toReformat="false" toShortenFQNames="true">
+  <template name="@if" value="@if ($START$)&#10;    $SELECTION$$END$&#10;@endif" description="Blade @if" toReformat="false" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@ifelse" value="@if ($START$)&#10;    $END$&#10;@else&#10;    &#10;@endif" description="Blade @ifelse" toReformat="false" toShortenFQNames="true">
+  <template name="@ifelse" value="@if ($START$)&#10;    $SELECTION$$END$&#10;@else&#10;    &#10;@endif" description="Blade @ifelse" toReformat="false" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -49,14 +49,14 @@
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@section" value="@section('$SECTION$')&#10;    $END$&#10;@endsection" description="Blade @section" toReformat="false" toShortenFQNames="true">
+  <template name="@section" value="@section('$SECTION$')&#10;    $SELECTION$$END$&#10;@endsection" description="Blade @section" toReformat="false" toShortenFQNames="true">
     <variable name="SECTION" expression="" defaultValue="&quot;content&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@while" value="@while ($START$)&#10;    $END$&#10;@endwhile" description="Blade @while" toReformat="false" toShortenFQNames="true">
+  <template name="@while" value="@while ($START$)&#10;    $SELECTION$$END$&#10;@endwhile" description="Blade @while" toReformat="false" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -99,7 +99,7 @@
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@unless" value="@unless ($START$)&#10;    $END$&#10;@endunless" description="Blade @unless" toReformat="false" toShortenFQNames="true">
+  <template name="@unless" value="@unless ($START$)&#10;    $SELECTION$$END$&#10;@endunless" description="Blade @unless" toReformat="false" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -113,7 +113,7 @@
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@forelse" value="@forelse ($USERS$ as $USER$)&#10;    $END$&#10;@empty&#10;&#10;@endforelse" description="Blade @forelse" toReformat="false" toShortenFQNames="true">
+  <template name="@forelse" value="@forelse ($USERS$ as $USER$)&#10;    $SELECTION$$END$&#10;@empty&#10;&#10;@endforelse" description="Blade @forelse" toReformat="false" toShortenFQNames="true">
     <variable name="USERS" expression="" defaultValue="&quot;$users&quot;" alwaysStopAt="true" />
     <variable name="USER" expression="" defaultValue="&quot;$user&quot;" alwaysStopAt="true" />
     <context>
@@ -200,7 +200,7 @@
   </template>
   <template name="@inject" value="@inject('$CONTENT$','$SERVICE$')" description="Blade @inject" toReformat="false" toShortenFQNames="true">
     <variable name="CONTENT" expression="" defaultValue="&quot;metrics&quot;" alwaysStopAt="true" />
-    <variable name="SERVICE" expression="" defaultValue="App\Services\MetricsService&quot;" alwaysStopAt="true" />
+    <variable name="SERVICE" expression="" defaultValue="&quot;App\Services\MetricsService&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="JSP" value="false" />
@@ -230,20 +230,21 @@
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@verbatim" value="@verbatim&#10;    &lt;div class=&quot;container&quot;&gt;&#10;        Hello, {{ name }}.&#10;    &lt;/div&gt;&#10;@endverbatim" description="Blade @verbatim" toReformat="false" toShortenFQNames="true">
+  <template name="@verbatim" value="@verbatim&#10;    $CONTENT$$SELECTION$&#10;@endverbatim" description="Blade @verbatim" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTENT" expression="" defaultValue="&quot;&lt;div class=\&quot;container\&quot;&gt;Hello, {{ name }}.&lt;/div&gt;&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@isset" value="@isset($START$)&#10;    $END$&#10;@endisset" description="Blade @isset" toReformat="false" toShortenFQNames="true">
+  <template name="@isset" value="@isset($START$)&#10;    $SELECTION$$END$&#10;@endisset" description="Blade @isset" toReformat="false" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
       <option name="JSP" value="false" />
     </context>
   </template>
-  <template name="@empty" value="@empty($START$)&#10;    $END$&#10;@endempty" description="Blade @empty" toReformat="false" toShortenFQNames="true">
+  <template name="@empty" value="@empty($START$)&#10;    $SELECTION$$END$&#10;@endempty" description="Blade @empty" toReformat="false" toShortenFQNames="true">
     <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
