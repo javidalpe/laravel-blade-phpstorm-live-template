@@ -54,6 +54,14 @@ e.g. `~/Library/Preferences/PhpStorm2017.2/templates` on OS X for PhpStorm 2017
 * **@empty** : Blade @empty
 * **mix** : Laravel's global mix function
 * **@lang** : Blade @lang
+* **@slot** : Blade @slot
+* **@json** : Blade @json
+* **@hasSection** : Blade @hasSection
+* **@csrf** : Blade CSRF Field
+* **@method** : Blade @method
+* **@includeIf** : Blade @includeIf
+* **@includeFirst** : Blade @includeFirst
+* **@prepend** : Blade @prepend
 
 ## Contributing
 1. Fork it
