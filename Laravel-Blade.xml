@@ -264,4 +264,53 @@
       <option name="JSP" value="false" />
     </context>
   </template>
+  <template name="@slot" value="@slot('$START$')&#10;    $SELECTION$$END$&#10;@endslot" description="Blade @slot" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@json" value="@json($VALUE$);" description="Blade @json" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="&quot;$array&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@hasSection" value="@hasSection('$SECTION$')&#10;&#9;&lt;div class=&quot;pull-right&quot;&gt;&#10;        @yield('$SECTION$')&#10;    &lt;/div&gt;&#10;    $SELECTION$$END$&#10;@endif" description="Blade @hasSection" toReformat="true" toShortenFQNames="true">
+    <variable name="SECTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@csrf" value="@csrf" description="Blade CSRF Field" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@method" value="@method('$METHOD$')" description="Blade @method" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="&quot;PUT&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@includeIf" value="@includeIf('$VIEW$'$DATA$)" description="Blade @includeIf" toReformat="false" toShortenFQNames="true">
+    <variable name="VIEW" expression="" defaultValue="&quot;view.name&quot;" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="&quot;, ['some' =&gt; 'data']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@includeFirst" value="@includeFirst($ARRAY$$DATA$)" description="Blade @includeFirst" toReformat="false" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="&quot;['custom.admin', 'admin']&quot;" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="&quot;, ['some' =&gt; 'data']&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="@prepend" value="@prepend ('$START$')&#10;    $END$&#10;@endprepend" description="Blade @prepend" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
