@@ -62,6 +62,7 @@ e.g. `~/Library/Preferences/PhpStorm2017.2/templates` on OS X for PhpStorm 2017
 * **@includeIf** : Blade @includeIf
 * **@includeFirst** : Blade @includeFirst
 * **@prepend** : Blade @prepend
+* **@doc** : Blade @php /** PHPDoc */
 
 ## Contributing
 1. Fork it

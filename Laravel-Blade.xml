@@ -313,4 +313,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="@doc" value="@php&#10;    /**&#10;    * @var $START$ $END$&#10;    */&#10;@endphp" description="Add PHPDoc to Blade" toReformat="true" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
