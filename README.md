@@ -6,17 +6,13 @@ This repo contains live templates for frequently-used Laravel Blade directives.
 ![Demo](img/demo.gif "Live templates demo")
 
 ## How to install
-1) Download and copy the *Laravel-Blade.xml* file to your templates folder:
+1) Download the *Laravel-Blade.xml* file.
+2) Find out where is your JetBrains Application Configuration directory:
+* Read this documentation: [Directories used by the IDE::Configuration directory](https://www.jetbrains.com/help/phpstorm/directories-used-by-the-ide-to-store-settings-caches-plugins-and-logs.html#config-directory)
+3) Put *Laravel-Blade.xml* file into *templates* folder.
+4) Restart PhpStorm.
 
-* Windows: `<your home directory>\.<product name><version number>\config\templates`
-* Linux: `~\.<product name><version number>\config\templates`
-* OS X: `~/Library/Preferences/<product name><version number>/templates`
-
-e.g. `~/Library/Preferences/PhpStorm2017.2/templates` on OS X for PhpStorm 2017
-
-2) Restart PhpStorm.
-
-3) To see all templates, go to *Preferences->Live Templates* and expand *Laravel-Blade*.
+5) To see all templates, go to *Preferences->Live Templates* and expand *Laravel-Blade*.
 
 ## Templates
 * **@elseif** : Blade @elseif
